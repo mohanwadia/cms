@@ -2,6 +2,7 @@ import Fuse from "fuse.js";
 import { useEffect, useRef, useState, useMemo } from "react";
 import Card from "@components/Card";
 import type { CollectionEntry } from "astro:content";
+import { withBase } from "@utils/withBase";
 
 export type SearchItem = {
   title: string;
@@ -20,7 +21,6 @@ interface SearchResult {
 }
 
 export default function SearchBar({ searchList }: Props) {
-  const base = import.meta.env.BASE_URL;
   const inputRef = useRef<HTMLInputElement>(null);
   const [inputVal, setInputVal] = useState("");
   const [searchResults, setSearchResults] = useState<SearchResult[] | null>(
@@ -113,7 +113,7 @@ export default function SearchBar({ searchList }: Props) {
         {searchResults &&
           searchResults.map(({ item, refIndex }) => (
             <Card
-              href={`${base}posts/${item.slug}/`}
+              href={withBase(`posts/${item.slug}/`)}
               frontmatter={item.data}
               key={`${refIndex}-${item.slug}`}
             />
