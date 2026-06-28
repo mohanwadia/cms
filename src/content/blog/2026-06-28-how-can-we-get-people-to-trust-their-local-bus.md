@@ -23,3 +23,7 @@ The Audit's definition of a **high-quality service** was set to a 20min frequenc
 My question I wanted to answer is can we create a *useable* network using the resources we already have. This question made me reflect on the disproportional allocation of transportation resources amongst local government areas (LGAs), duplication of existing resources, existing low-patronage routes that don't care about service productivity, and so many relics of a system that has been left unchanged for decades. 
 
 To truly improve our network, let's ignore the one-time costs of building bus stop infrastructure, re-tendering contracts, planning, consultation etc. in light of creating services that permanently serve our communities. 
+
+---
+
+There's a critical psychological trick when bus routes go from needing to check a timetable to turn-up-and-go. Forcing passengers to sprint for the chance of catching an earlier service serves the existing anxiety of trusting a bus route. For infrequent routes, trying to get to a bus stop five minutes before you should need to adds on to travel time and 
