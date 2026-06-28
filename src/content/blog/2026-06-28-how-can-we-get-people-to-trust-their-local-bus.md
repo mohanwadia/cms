@@ -16,6 +16,8 @@ However, the [2026 Inquiry](https://www.audit.vic.gov.au/report/improving-bus-se
 >
 > 63 per cent of people will walk up to, or over, 10 minutes (or about 800 metres) to a bus stop if the bus is frequent, fast and reliable.
 
+The Audit's definition of a **high-quality service** was set to a 20min frequency 6am-8pm, with services until 9pm on weekdays and services on weekends. By not setting *useable* frequencies on weekends, they disappointingly retro-fitted existing acceptable notions of weekend demand onto our existing routes. The SmartBus standard of weekend frequency is 30 minutes, which has clearly out-grown demand as seen by continuous fully-packed buses entering and exiting interchanges. 
 
+My question I wanted to answer is can we create a *useable* network using the resources we already have. This question made me reflect on the disproportional allocation of transportation resources amongst local government areas (LGAs), duplication of existing resources, existing low-patronage routes that don't care about service productivity, and so many relics of a system that has been left unchanged for decades. 
 
-&nbsp;
+To truly improve our network, let's ignore the one-time costs of building bus stop infrastructure, re-tendering contracts, planning, consultation etc. in light of creating services that permanently serve our communities. 
