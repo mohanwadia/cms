@@ -129,6 +129,8 @@ This route used to operate on a 40 minute frequency. I propose shortening it to 
 
 ## #11 - 742/737/734/732 Network Review
 
+No changes made to Knox Transit Link
+
 ### New 734/737: Glen Iris - Knox City SC Via Glen Waverley RS
 
 **Frequency:** 20min  
@@ -136,7 +138,7 @@ This route used to operate on a 40 minute frequency. I propose shortening it to 
 
 Follows 734/737 Alignment
 
-### New Burwood RS - Glen Waverley RS Via Highbury Rd
+### New 732: Burwood RS - Glen Waverley RS Via Highbury Rd
 
 **Frequency:** 30min  
 **Resources:** 734
@@ -149,5 +151,5 @@ From Glen Waverley, Visit The Glen SC Via Sneddon Dr, High St, and Springvale Rd
 **Frequency:** 20min  
 **Resources:** 742 (All)
 
-From Mitcham Station, continues along 
+From Mitcham Station, continues along Mitcham Rd and Terrara Rd to Vermont South SC, following the existing alignment to Brandon Park SC Via Glen Waverley, and continuing along Springvale Rd to Wellington Rd where the route heads to the Monash University Bus Loop. Finally, the route continues to Clayton RS. 
 
