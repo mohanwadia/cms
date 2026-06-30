@@ -19,3 +19,7 @@ Here are five things that any city should require when infrastructure plans are 
 The gold standard of running way in transport is when it's exclusive and separated as seen in most rail networks. Buses and Trams are mostly not separated meaning they must wait at traffic lights, and are mostly not exclusive as they travel in mixed traffic. 
 
 Creating a network that requires bus-to-bus connections means that attention to detail needs to be focused on the placement of bus stops. The Route 693 towards Belgrave for example does not allow passengers to travel along Springvale Rd in any direction without an 8-11 minute walk and crossing traffic lights.
+
+---
+
+Queue-skip lanes are not a new thing, 
