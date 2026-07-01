@@ -1,8 +1,9 @@
 ---
 author: Mohan Wadia
-pubDatetime: 2026-07-01
-modDatetime: 2026-07-01
+pubDatetime: 2026-07-02
+modDatetime: 2026-07-02
 title: Lowest Performing Bus Routes in Melbourne
+slug: 2026-07-02-lowest-performing-bus-routes-in-melbourne.md
 featured: true
 draft: false
 tags:
