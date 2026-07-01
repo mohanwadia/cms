@@ -10,11 +10,11 @@ tags:
   - Article
 description: Analysing the productivity of Melbourne's bus routes
 ---
-I believe it's important to regularly examine the productivity of all bus routes, making resource-effective changes to create a more useful network for more people. [Victoria's Bus Plan (2021)](https://www.vic.gov.au/sites/default/files/2023-09/victorias-bus-plan-bus-reform-roadmap.pdf) agrees with this.
+I believe it's important to regularly examine the productivity of all bus routes, making resource-effective changes to create a more useful network for more people. [Victoria's Bus Plan (2021)](https://www.vic.gov.au/sites/default/files/2023-09/victorias-bus-plan-bus-reform-roadmap.pdf) attempts to do the same.
 
 > 6. Deliver better value for money – ensuring value for money and continual service improvement under existing and new contracts with bus operators, manufacturers and infrastructure partners.
 
-I set out to see which Bus Routes are under-performing relative to the resources provided, as well as which routes require more resources to sustain demand.
+I set out to see which Melbourne bus routes are under-performing relative to the resources provided, as well as which routes require more resources to sustain demand.
 
 # Methodology
 
@@ -67,7 +67,7 @@ Routes 246 (36.9 people/hr), 402 (31.8 people/hr), 733 (45.6 people/hr), 737 (36
 
 ![Figure 2](../../../public/images/scatter_50.png)
 
-Meanwhile, 788 stands alone as the most underperforming from the top 50 most served routes, running over 50km and taking 100+ minutes with a frequency of between 30-40 minutes over a solid span. It has a very poor patronage of 7.9 people per service hour which is less than half of the mean of all routes. 
+Meanwhile, Route 788 stands alone as the most underperforming from the top 50 most served routes, running over 50km and taking 100+ minutes with a frequency of between 30-40 minutes over a solid span. It has a very poor patronage of 7.9 people per service hour which is less than half of the mean of all routes. 
 
 
 | **Route** | **Description** | **Patronage ('000)** | **Service Hours** | **Patronage Per Service Hour** |
@@ -79,17 +79,17 @@ Meanwhile, 788 stands alone as the most underperforming from the top 50 most ser
 | 703 | Blackburn - Middle Brighton | 2603.0 | 1018.0 | 49.0 |
 
 
-The table above displays the 5 routes with the greatest number of service hours. The three orbitals (901/902/903) are the most resource intensive routes, however their patronage is proportional to the number of service hours run. The 902 in particular is super productive for a 78 kilometre journey. 
+The table above displays the 5 routes with the greatest number of service hours. The three orbitals (901/902/903) are the most resource intensive routes, however their patronage is proportional to the number of service hours they each run. The 902 in particular is super productive for a 78 kilometre journey with 67.8 boardings per hour.
 
-The SmartBuses 703, 900, 906 and 907 all follow as the most popular routes in Melbourne. It's clear that the SmartBus program has been a decade-long success by creating new high-performing routes, however their extreme length has proved tricky to update as demand has increased over time. Patronage levels on the three orbitals in 2023 are within 5% of 2019 levels of patronage, almost returning to pre-COVID displaying the demand for reliable travel remains.
+SmartBuses 703, 900, 906 and 907 all follow as the most popular routes in Melbourne. It's clear that the SmartBus program has been a decade-long success by creating new high-performing routes, however their extreme length has proved tricky to update as demand has increased over time. Patronage levels on the three orbitals in 2023 are within 5% of 2019 levels of patronage, almost returning to pre-COVID displaying the demand for reliable travel remains.
 
 ![Figure 4](../../../public/images/histogram.png)
 
-The patronage per hour histogram provides a mean of 18.3 passengers/hour. The Route 601 stands as an outlier with a historic 261 passengers per hour. I suspect this is the result of a variety of factors, including limited stops, an average speed of 29km/h, lengthy bus lanes, high demand from students, and possible low fare avoidance due to most connecting with rail.
+The patronage per hour histogram provides a mean of 18.3 passengers/hour. The Route 601 stands as an outlier with a maximum 261 passengers per hour. I suspect this is the result of a variety of factors, including limited stops, an average speed of 29km/h, lengthy bus lanes, high demand from students, and possible low fare avoidance due to most connecting with rail.
 
 ![Figure 5](../../../public/images/scatter_all.png)
 
-Over 80 routes have a patronage per service hour at less than half of the average, including the 788 as aforementioned. This is also seen in the histogram, with an IQR of 9.5 to 24.2 passengers/hour. While there are other goals for routes such as maximizing coverage, low patronage is a key indicator that the route may be underperforming.
+Over 80 routes have a patronage per service hour at less than half of the average, including the 788 as aforementioned. This is also seen in the histogram, with an interquartile range of 9.5 to 24.2 passengers/hour. While there are other goals for routes such as maximizing coverage, low patronage is a key indicator that the route may be underperforming.
 
 # So What?
 
