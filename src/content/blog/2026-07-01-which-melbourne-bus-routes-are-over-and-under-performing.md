@@ -59,9 +59,11 @@ print(model.summary())
 
 The number of service hours of a route has the strongest association with patronage. Therefore, I will use Service Duration as the independent variable in the following visual analysis. 
 
-![Figure 1](../../../public/images/scatter_50.png)
+![Figure 1](../../../public/images/bar.png)
 
 Routes 246 (36.9 people/hr), 402 (31.8 people/hr), 733 (45.6 people/hr), 737 (36.3 people/hr), and 767 (32.6 people/hr) are over-performing other non SmartBus routes with high level of service. The [733 and 767](https://www.premier.vic.gov.au/community-gets-board-extra-bus-services) both got upgraded in 2022, and the 246 and 402 runs an elite 10-minute off-peak frequency. However the 737 is due for an upgrade, running a worse than 30 minute off-peak frequency. 
+
+![Figure 2](../../../public/images/scatter_50.png)
 
 Meanwhile, 788 stands alone as the most underperforming from the top 50 most served routes, running over 50km and taking 100+ minutes with a frequency of between 30-40 minutes over a solid span. It has a very poor patronage of 7.9 people per service hour which is less than half of the mean of all routes. 
 
@@ -79,11 +81,11 @@ The table above displays the 5 routes with the greatest number of service hours.
 
 The 703, 900, 907, and 906 follow which are all SmartBuses. It's clear that the SmartBus program has been a decade-long success by creating new high-performing routes, however their extreme length has proved tricky to update as demand has increased over time. Patronage levels on the three orbitals in 2023 are within 5% of 2019 levels of patronage, almost returning to pre-COVID displaying the demand for reliable travel remains.
 
-![Figure 2](../../../public/images/histogram.png)
+![Figure 4](../../../public/images/histogram.png)
 
 The patronage per hour histogram provides a mean of 18.3 passengers/hour. The Route 601 stands as an outlier with a historic 261 passengers per hour. I suspect this is the result of a variety of factors, including limited stops, an average speed of 29km/h, lengthy bus lanes, high demand from students, and possible low fare avoidance due to most connecting with rail.
 
-![Figure 3](../../../public/images/scatter_all.png)
+![Figure 5](../../../public/images/scatter_all.png)
 
 Over 80 routes have a patronage per service hour at less than half of the average, including the 788 as aforementioned. This is also seen in the histogram, with an IQR of 9.5 to 24.2 passengers/hour. While there are other goals for routes such as maximizing coverage, low patronage is a key indicator that the route may be underperforming.
 
