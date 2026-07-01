@@ -12,7 +12,9 @@ I believe it's important to regularly examine the productivity of all bus routes
 
 > 6. Deliver better value for money – ensuring value for money and continual service improvement under existing and new contracts with bus operators, manufacturers and infrastructure partners.
 
-I set out to see which Bus Routes are under-performing relative to the resources provided, as well as which routes require more resources to sustain demand
+I set out to see which Bus Routes are under-performing relative to the resources provided, as well as which routes require more resources to sustain demand.
+
+# Methodology
 
 It's important to normalize patronage data per route in order to make comparisons. I decided to test patronage data against the following three metrics to see which has the strongest correlation. 
 
@@ -42,6 +44,9 @@ X = sm.add_constant(X)
 model = sm.OLS(y, X, missing='drop').fit()
 print(model.summary())
 ```
+
+# Findings
+
 
 | Independent Variable | **R-squared Value** | **F-statistic Value** | **P value** |
 | -------------------- | ------------------- | --------------------- | ----------- |
@@ -76,4 +81,6 @@ The patronage per hour histogram provides a mean of 18.3 passengers/hourThe Rout
 
 There is a large range of routes (82 to be exact) that have a patronage per service hour at less than half of the average. This is also seen in the histogram, with an IQR of 9.5 to 24.2 passengers/hour. While there are other goals for routes such as maximizing coverage, low patronage is a key indicator that the route may be underperforming.
 
-So What?
+# So What?
+
+By isolating service hours as one variable, patronage data assists in evaluating the performance of a route. However, there is more nuance to this that requires data that isn't currently publicly available. Is an off-peak and weekend patronage drop proportional to the service hours provided? Moreover, how have recent upgrades in service hours affect patronage, and can the discussed model accurately predict said change?
