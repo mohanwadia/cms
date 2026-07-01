@@ -16,8 +16,6 @@ I believe it's important to regularly examine the productivity of all bus routes
 
 I set out to see which Melbourne bus routes are under-performing relative to the resources provided, as well as which routes require more resources to sustain demand.
 
-## Table of Contents
-
 # Methodology
 
 It's important to normalize patronage data per route in order to make comparisons. I decided to test patronage data against the following three metrics to see which has the strongest correlation. 
