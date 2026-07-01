@@ -7,7 +7,9 @@ slug: patronage-analysis
 featured: true
 draft: false
 tags:
-  - Article
+  - article
+  - gtfs
+  - bus
 description: Analysing the productivity of Melbourne's bus routes
 ---
 I believe it's important to regularly examine the productivity of all bus routes, making resource-effective changes to create a more useful network for more people. [Victoria's Bus Plan (2021)](https://www.vic.gov.au/sites/default/files/2023-09/victorias-bus-plan-bus-reform-roadmap.pdf) attempts to do the same.
