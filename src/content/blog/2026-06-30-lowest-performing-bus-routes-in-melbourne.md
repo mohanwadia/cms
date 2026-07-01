@@ -84,11 +84,20 @@ The Route 601 as an outlier with a historic 261 passengers per hour. I suspect t
 > [!NOTE]
 > Supplementary information.
 
+
+
+Then there is
+
 > [!WARNING]- Collapsed by default
 > Hidden until expanded.
 
+Then 
+
 > [!TIP]+ Expanded, but collapsible
 > Starts open.
+
+
+Then
 
 > [!DANGER] Custom title
 > Replaces the default heading.
