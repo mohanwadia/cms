@@ -16,6 +16,8 @@ I believe it's important to regularly examine the productivity of all bus routes
 
 I set out to see which Melbourne bus routes are under-performing relative to the resources provided, as well as which routes require more resources to sustain demand.
 
+## Table of Contents
+
 # Methodology
 
 It's important to normalize patronage data per route in order to make comparisons. I decided to test patronage data against the following three metrics to see which has the strongest correlation. 
@@ -24,7 +26,7 @@ It's important to normalize patronage data per route in order to make comparison
 2. Service Distance: The total timetabled distance covered
 3. Service Stops: The number of timetabled non-unique stops served
 
-I used a normal week in February 2026 without public holidays, and summated service hours for each direction.
+I used a normal week in February 2026 without public holidays, and summated service hours for each direction. Patronage data is taken from the year 2023 via a Freedom of Information Request as up to date patronage data is unfortunately not publicly available.
 
 The following is a simplification of loading the GTFS data using `gtfs-kit`, which was later used to calculate the three metrics. 
 
