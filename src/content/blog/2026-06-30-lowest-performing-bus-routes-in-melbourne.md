@@ -26,7 +26,7 @@ I used a normal week in February 2026 without public holidays, and included bidi
 
 The following is a simplification of loading the GTFS data using `gtfs-kit`, which was later used to calculate the three metrics. 
 
-```ts file="src/content.config.ts"
+```py file="src/assets/code/snippet1.py"
 // ...
 tags: z.array(z.string()).default(["others"]), // replace "others" with whatever you want
 // ...
