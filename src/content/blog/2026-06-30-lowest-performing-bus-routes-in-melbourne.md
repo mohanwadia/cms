@@ -19,8 +19,8 @@ I set out to see which Bus Routes are under-performing relative to the resources
 It's important to normalize patronage data per route in order to make comparisons. I decided to test patronage data against the following three metrics to see which has the strongest correlation. 
 
 1. ++Service Duration:++ The total number of timetabled service hours
-2. ++Service Distance:++ The total distance covered by the route in a normal week.
-3. ++Service Stops:++ The total non-unique number of stops visited by a route in a normal week.
+2. ++Service Distance:++ The total timetabled distance covered
+3. ++Service Stops:++ The number of timetabled non-unique stops served
 
 I used a normal week in February 2026 without public holidays, and included bidirectional travel to penalize routes that may only operate in one direction. 
 
@@ -29,7 +29,7 @@ The following is a simplification of loading the GTFS data using `gtfs-kit`, whi
 ```
 import gtfs-kit as gk
 feed = gk.read_feed("C:/Users/Administrator/Desktop/PT/gtfs/4/google_transit.zip", dist_units="m")
-dates = ["20260202", "20260203", "20260204", "20260205", "20260206", "20260207", "20260208"]
+dates = [str(d) for d in range(20260202, 20260202 + 7)]
 trip_stats = feed.compute_trip_stats()
 route_stats = gk.routes.compute_route_stats(feed, dates, trip_stats
 ```
