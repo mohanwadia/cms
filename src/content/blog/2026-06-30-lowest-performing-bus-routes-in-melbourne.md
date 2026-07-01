@@ -26,7 +26,7 @@ I used a normal week in February 2026 without public holidays, and included bidi
 
 The following is a simplification of loading the GTFS data using `gtfs-kit`, which was later used to calculate the three metrics. 
 
-```py file="snippet.py"
+```py file="gtfs-kit.py"
 import gtfs-kit as gk
 feed = gk.read_feed("C:/Users/Administrator/Desktop/PT/gtfs/4/google_transit.zip", dist_units="m")
 dates = [str(d) for d in range(20260202, 20260202 + 7)]
@@ -36,7 +36,7 @@ route_stats = gk.routes.compute_route_stats(feed, dates, trip_stats
 
 I then used `statsmodels.api` on the three metrics, deploying an Ordinar Least Squares Regression to find the R-squared and F-statistic values.
 
-```
+```py file="statsmodels.py"
 import statsmodels.api as sm
 X = df['patronage']
 y = df['service_hours']
