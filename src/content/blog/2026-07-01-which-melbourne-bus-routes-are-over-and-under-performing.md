@@ -81,7 +81,7 @@ Meanwhile, 788 stands alone as the most underperforming from the top 50 most ser
 
 The table above displays the 5 routes with the greatest number of service hours. The three orbitals (901/902/903) are the most resource intensive routes, however their patronage is proportional to the number of service hours run. The 902 in particular is super productive for a 78 kilometre journey. 
 
-The 703, 900, 907, and 906 follow which are all SmartBuses. It's clear that the SmartBus program has been a decade-long success by creating new high-performing routes, however their extreme length has proved tricky to update as demand has increased over time. Patronage levels on the three orbitals in 2023 are within 5% of 2019 levels of patronage, almost returning to pre-COVID displaying the demand for reliable travel remains.
+The SmartBuses 703, 900, 907, and 906 all follow as the most popular routes in Melbourne. It's clear that the SmartBus program has been a decade-long success by creating new high-performing routes, however their extreme length has proved tricky to update as demand has increased over time. Patronage levels on the three orbitals in 2023 are within 5% of 2019 levels of patronage, almost returning to pre-COVID displaying the demand for reliable travel remains.
 
 ![Figure 4](../../../public/images/histogram.png)
 
