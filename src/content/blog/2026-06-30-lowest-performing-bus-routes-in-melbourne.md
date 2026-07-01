@@ -18,7 +18,7 @@ I set out to see which Bus Routes are under-performing relative to the resources
 
 It's important to normalize patronage data per route in order to make comparisons. I decided to test patronage data against the following three metrics to see which has the strongest correlation. 
 
-1. ++Service Duration:++ The sum of the time spent by each bus allocated to a certain route in a week in hours. The number of hours in a normal week a service runs
+1. ++Service Duration:++ The total number of timetabled service hours
 2. ++Service Distance:++ The total distance covered by the route in a normal week.
 3. ++Service Stops:++ The total non-unique number of stops visited by a route in a normal week.
 
