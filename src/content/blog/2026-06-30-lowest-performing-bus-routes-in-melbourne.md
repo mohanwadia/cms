@@ -26,15 +26,11 @@ I used a normal week in February 2026 without public holidays, and included bidi
 
 The following is a simplification of loading the GTFS data using `gtfs-kit`, which was later used to calculate the three metrics. 
 
+```ts file="src/content.config.ts"
+// ...
+tags: z.array(z.string()).default(["others"]), // replace "others" with whatever you want
+// ...
 ```
-import gtfs-kit as gk
-feed = gk.read_feed("C:/Users/Administrator/Desktop/PT/gtfs/4/google_transit.zip", dist_units="m")
-dates = [str(d) for d in range(20260202, 20260202 + 7)]
-trip_stats = feed.compute_trip_stats()
-route_stats = gk.routes.compute_route_stats(feed, dates, trip_stats
-```
-
-{python}
 
 I then used `statsmodels.api` on the three metrics, deploying an Ordinar Least Squares Regression to find the R-squared and F-statistic values.
 
@@ -85,4 +81,4 @@ Meanwhile, 788 stands alone as the most underperforming from the top 50 most ser
 
 The patronage per hour histogram provides a mean of 18.3 passengers/hour, with an IQR of 9.5 to 24.2 passengers/hour. There is a large range of routes (82 to be exact) that have a patronage per service hour at less than half of the average. 
 
-The Route 601 as an outlier with a historic 261 passengers per hour. This may be from a variety of factors, including limited stops, a high speed of 29km/h, lengthy bus lanes, and possible low fare avoidance due to most connecting with rail.
+The Route 601 as an outlier with a historic 261 passengers per hour. This may be from a variety of factors, including limited stops, an average speed of 29km/h, lengthy bus lanes, and possible low fare avoidance due to most connecting with rail.
