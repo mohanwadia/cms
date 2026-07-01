@@ -57,9 +57,9 @@ print(model.summary())
 
 As a result, the number of service hours of a route has the strongest association with patronage. Therefore, I will use Service Duration as the independent variable in the following visual analysis. 
 
-![something](@/images/scatter_50.jpg)
-![something](@/images/scatter_50.jpg)
-![something](@/images/scatter_50.jpg)
+![something](../../images/scatter_50.jpg)
+![something](../../images/scatter_50.jpg)
+![something](../../images/scatter_50.jpg)
 
 # Part III: So what?
 
