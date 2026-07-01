@@ -8,23 +8,21 @@ draft: false
 tags:
   - Article
 ---
-I believe it's important to regularly examine the productivity of all bus routes, making resource-effective changes to create a more useful network for more people. 
-
-[Victoria's Bus Plan (2021)](https://www.vic.gov.au/sites/default/files/2023-09/victorias-bus-plan-bus-reform-roadmap.pdf) agrees
+I believe it's important to regularly examine the productivity of all bus routes, making resource-effective changes to create a more useful network for more people. [Victoria's Bus Plan (2021)](https://www.vic.gov.au/sites/default/files/2023-09/victorias-bus-plan-bus-reform-roadmap.pdf) agrees with this.
 
 > 6. Deliver better value for money – ensuring value for money and continual service improvement under existing and new contracts with bus operators, manufacturers and infrastructure partners." - 
 
-Drivers hate to see empty buses, while regular bus commuters hate to be in overcrowded buses. 
-
-I set out to see if 
+I set out to see which Bus Routes are under-performing relative to the resources provided, as well as which routes require more resources to sustain demand
 
 ## Part I: Method
 
-1. Service Duration: The number of hours in a normal week a service runs
+It's important to normalize patronage data per route in order to make comparisons. I decided to test patronage data against the following three metrics to see which has the strongest correlation. 
+
+1. Service Duration: The sum of the time spent by each bus allocated to a certain route in a week in hours. The number of hours in a normal week a service runs
 2. Service Distance: The total distance covered by the route in a normal week.
 3. Service Stops: The total non-unique number of stops visited by a route in a normal week.
 
-For each of the metrics, I used a normal week in February 2026 without public holidays, and are inclusive of bidirectional travel to justly penalize routes that may only operate in one direction. 
+I used a normal week in February 2026 without public holidays, and included bidirectional travel to penalize routes that may only operate in one direction. 
 
 The following is a simplification of loading the GTFS data using `gtfs-kit`, which was later used to calculate the three metrics. 
 
@@ -34,6 +32,7 @@ feed = gk.read_feed("C:/Users/Administrator/Desktop/PT/gtfs/4/google_transit.zip
 dates = ["20260202", "20260203", "20260204", "20260205", "20260206", "20260207", "20260208"]
 trip_stats = feed.compute_trip_stats()
 route_stats = gk.routes.compute_route_stats(feed, dates, trip_stats
+{python}
 ```
 
 I then used `statsmodels.api` on the three metrics, deploying an Ordinar Least Squares Regression to find the R-squared and F-statistic values.
@@ -45,6 +44,7 @@ y = df['service_hours']
 X = sm.add_constant(X)
 model = sm.OLS(y, X, missing='drop').fit()
 print(model.summary())
+{python}
 ```
 
 ## Part II: Findings
