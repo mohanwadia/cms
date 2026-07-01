@@ -22,7 +22,7 @@ It's important to normalize patronage data per route in order to make comparison
 2. Service Distance: The total timetabled distance covered
 3. Service Stops: The number of timetabled non-unique stops served
 
-I used a normal week in February 2026 without public holidays, and included bidirectional travel to penalize routes that may only operate in one direction. 
+I used a normal week in February 2026 without public holidays, and summated service hours for each direction.
 
 The following is a simplification of loading the GTFS data using `gtfs-kit`, which was later used to calculate the three metrics. 
 
@@ -38,8 +38,8 @@ I then used `statsmodels.api` on the three metrics, deploying an Ordinary Least 
 
 ```python file="statsmodels.py"
 import statsmodels.api as sm
-X = df['patronage']
-y = df['service_hours']
+X = df['service_hours']
+y = df['patronage']
 X = sm.add_constant(X)
 model = sm.OLS(y, X, missing='drop').fit()
 print(model.summary())
@@ -59,7 +59,7 @@ As a result, the number of service hours of a route has the strongest associatio
 
 ![Figure 1](../../../public/images/scatter_50.png)
 
-The orbitals (901/902/903) are the most resource intensive routes, however their patronage is proportional to the number of service hours run. The 703, 900, 907, and 906 follow which are all SmartBuses. It's clear that the SmartBus program has been a decade-long success by creating new high-performing routes, however their extreme length has proved tricky to update as demand has increased over time and bounced back over COVID.
+The orbitals (901/902/903) are the most resource intensive routes, however their patronage is proportional to the number of service hours run. The 703, 900, 907, and 906 follow which are all SmartBuses. It's clear that the SmartBus program has been a decade-long success by creating new high-performing routes, however their extreme length has proved tricky to update as demand has increased over time and bounced back after COVID as seen in the table below.
 
 
 | Route | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 |
