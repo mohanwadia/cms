@@ -55,7 +55,12 @@ print(model.summary())
 
 As a result, it can be determined that the number of service hours of a route is the strongest predictor of patronage. Therefore, I will use Service Duration as the independent variable in the following visual analysis. 
 
-![image.png](/image-9.png)
+![image.png](/image-11.png)
+
+![image.png](/image-10.png)
+
+![image.png](/image-12.png)
 
 ## Part III: So what?
 
+The orbitals (901/902/903) are the most resource intensive routes, however their patronage is proportional to the number of service hours run. The 703, 900, 907, and 906 follow which are all SmartBuses. The next greatest buses with overperforming patronage are the 246, 733, 828, 402, 767, and 737. Meanwhile, 788 stands alone as the most underperforming from the top 50 most served routes. 
