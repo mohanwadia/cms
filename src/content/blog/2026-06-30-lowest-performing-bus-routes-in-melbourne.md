@@ -94,3 +94,16 @@ The Route 601 as an outlier with a historic 261 passengers per hour. I suspect t
 > [!DANGER] Custom title
 > Replaces the default heading.
 ```
+
+```md
+---
+# frontmatter
+---
+
+Here are some recommendations, tips & tricks for creating new posts in AstroPaper blog theme.
+
+<!-- [!code ++] -->
+## Table of contents
+
+<!-- the rest of the post -->
+```
