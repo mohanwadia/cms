@@ -45,8 +45,6 @@ model = sm.OLS(y, X, missing='drop').fit()
 print(model.summary())
 ```
 
-{python}
-
 # Part II: Findings
 
 
