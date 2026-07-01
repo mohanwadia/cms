@@ -85,7 +85,7 @@ The patronage per hour histogram provides a mean of 18.3 passengers/hour. The Ro
 
 ![Figure 3](../../../public/images/scatter_all.png)
 
-There is a large range of routes (82 to be exact) that have a patronage per service hour at less than half of the average. This is also seen in the histogram, with an IQR of 9.5 to 24.2 passengers/hour. While there are other goals for routes such as maximizing coverage, low patronage is a key indicator that the route may be underperforming.
+Over 80 routes have a patronage per service hour at less than half of the average, including the 788 as aforementioned. This is also seen in the histogram, with an IQR of 9.5 to 24.2 passengers/hour. While there are other goals for routes such as maximizing coverage, low patronage is a key indicator that the route may be underperforming.
 
 # So What?
 
