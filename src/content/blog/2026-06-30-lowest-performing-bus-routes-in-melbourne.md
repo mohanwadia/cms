@@ -18,9 +18,9 @@ I set out to see which Bus Routes are under-performing relative to the resources
 
 It's important to normalize patronage data per route in order to make comparisons. I decided to test patronage data against the following three metrics to see which has the strongest correlation. 
 
-1. ++Service Duration:++ The total number of timetabled service hours
-2. ++Service Distance:++ The total timetabled distance covered
-3. ++Service Stops:++ The number of timetabled non-unique stops served
+1. Service Duration: The total number of timetabled service hours
+2. Service Distance: The total timetabled distance covered
+3. Service Stops: The number of timetabled non-unique stops served
 
 I used a normal week in February 2026 without public holidays, and included bidirectional travel to penalize routes that may only operate in one direction. 
 
@@ -56,8 +56,6 @@ print(model.summary())
 
 
 As a result, the number of service hours of a route has the strongest association with patronage. Therefore, I will use Service Duration as the independent variable in the following visual analysis. 
-
-![image.png](/image-11.png)
 
 ![image.png](/image-10.png)
 
