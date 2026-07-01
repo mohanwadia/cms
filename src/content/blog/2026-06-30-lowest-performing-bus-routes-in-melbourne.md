@@ -81,23 +81,16 @@ The patronage per hour histogram provides a mean of 18.3 passengers/hour, with a
 
 The Route 601 as an outlier with a historic 261 passengers per hour. I suspect this is the result of a variety of factors, including limited stops, an average speed of 29km/h, lengthy bus lanes, and possible low fare avoidance due to most connecting with rail.
 
+```md
 > [!NOTE]
 > Supplementary information.
-
-
-
-Then there is
 
 > [!WARNING]- Collapsed by default
 > Hidden until expanded.
 
-Then 
-
 > [!TIP]+ Expanded, but collapsible
 > Starts open.
 
-
-Then
-
 > [!DANGER] Custom title
 > Replaces the default heading.
+```
